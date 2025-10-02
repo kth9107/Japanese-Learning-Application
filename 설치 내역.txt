@@ -1,0 +1,38 @@
+최신 스택: Next.js 15 + React 19 + TypeScript + Tailwind + shadcn/ui + next-pwa. Node 22.12.0이면 충족. 
+nextjs.org
+
+React 18 유지 필요시: Next.js 14 + React 18.2. 
+nextjs.org
+
+1. 프로젝트 생성
+```````````````````````````````````````````````
+npx create-next-app@latest bizjp --ts
+# ✔ App Router 사용
+# ✔ ESLint/ Tailwind 사용
+# ✔ src/ 디렉터리 사용 선택 자유
+```````````````````````````````````````````````
+
+2. Tailwind 확인
+create-next-app가 설정함. 필요시 재설치:
+```````````````````````````````````````````````
+cd bizjp
+npm i -D tailwindcss postcss autoprefixer
+
+#tailwindcss를 설치
+npm install -D tailwindcss postcss autoprefixer
+
+npx tailwindcss init -p
+```````````````````````````````````````````````
+
+3. shadcn/ui 설치
+#가이드 https://ui.shadcn.com/docs/installation?utm_source=chatgpt.com
+```````````````````````````````````````````````
+npm i clsx tailwind-merge
+npx shadcn@latest init
+npx shadcn@latest add button input textarea dialog card
+```````````````````````````````````````````````
+
+4. PWA 설정(Workbox 기반)
+```````````````````````````````````````````````
+npm i next-pwa
+```````````````````````````````````````````````
